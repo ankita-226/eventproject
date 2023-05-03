@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubleClick project</title>
+    <style>
+        body{
+            width:100%;
+            height:100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+      .shortCard{
+        width:100px;
+        height:100px;
+        background: rgb(209, 150, 150);
+        text-align: center;
+        padding:20px;
+        margin:30px;
+      }
+      button{
+        padding:20px 40px;
+        font-size:22px;
+
+      }
+    </style>
+</head>
+<body>
+    <button ondblClick="myfun()">double click</button>
+
+    <script>
+ function myfun(){
+    const card = document.createElement("div")
+    card.className = "shortCard"
+    document.body.appendChild(card).innerText="Hi Ankita"
+ }
+    
+    </script>
+</body>
+</html>

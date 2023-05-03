@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key up and key down</title>
+</head>
+<body>
+    <input type="text" onkeyup ="myfun()" id="fname">
+    <input type="text" onkeydown="myfunc() ">
+    <p id="demo"></p>
+</body>
+<script>
+   function myfun(){
+    let x= document.getElementById("fname")
+    x.value = x.value.toUpperCase()
+   }
+    function myfunc(){
+      const p = document.getElementById("demo") .innerText="you pressed inside"
+    }
+
+</script>
+</html>
